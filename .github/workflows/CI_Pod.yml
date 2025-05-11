@@ -56,12 +56,11 @@ jobs:
           push: ${{ env.SKIP_DOCKER_PUSH != 'true' }}
           tags: ${{ env.DOCKER_IMAGE }}:${{ env.DOCKER_TAG }}
 
-deploy:
-  needs: build
-  runs-on: ubuntu-latest
-  steps:
-    - name: Simulate Deployment
-      run: |
-        echo "✅ Build complete. Skipping actual deployment..."
-        echo "This is a placeholder step for deployment."
-
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simulate Deployment
+        run: |
+          echo "Build complete. Skipping actual deployment..."
+          echo "This is a placeholder step for deployment."
