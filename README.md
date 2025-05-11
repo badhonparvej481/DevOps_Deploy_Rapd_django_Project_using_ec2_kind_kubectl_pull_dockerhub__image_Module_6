@@ -22,3 +22,11 @@ To Run This Application
     libffi-dev \
     libpq-dev \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
+# 🚀 RapidCompetitions
+
+A Django-based application containerized with Docker and deployed on Kubernetes via an AWS EC2 instance.
+
+---
+
+## 📁 Project Structure
+
